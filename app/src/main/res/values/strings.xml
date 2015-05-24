@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Easy Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_themes">Themes</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="drawer_header_title">History</string>
+    <string name="choose_theme">Pick a theme!</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    tools:context=".CustomDialog"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="16dp"
+        android:text="@string/choose_theme"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/grey20"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="@integer/theme_cols"
+        android:rowCount="@integer/theme_rows"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_red"
+            android:clickable="true"
+            android:id="@+id/red_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_purple"
+            android:clickable="true"
+            android:id="@+id/purple_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_indigo"
+            android:clickable="true"
+            android:id="@+id/indigo_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_blue"
+            android:clickable="true"
+            android:id="@+id/blue_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_teal"
+            android:clickable="true"
+            android:id="@+id/teal_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_green"
+            android:clickable="true"
+            android:id="@+id/green_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_lime"
+            android:clickable="true"
+            android:id="@+id/lime_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_yellow"
+            android:clickable="true"
+            android:id="@+id/yellow_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_orange"
+            android:clickable="true"
+            android:id="@+id/orange_btn"
+            />
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_bluegrey"
+            android:clickable="true"
+            android:id="@+id/bluegrey_btn"
+            />
+
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+</LinearLayout>

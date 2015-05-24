@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="text_display_field_height">150dp</dimen>
+    <dimen name="actionbar_height">60dp</dimen>
+    <dimen name="buttonshadowdx">5dp</dimen>
+    <dimen name="theme_choice_diam">50dp</dimen>
+    <integer name="theme_rows">4</integer>
+    <integer name="theme_cols">4</integer>
+</resources>

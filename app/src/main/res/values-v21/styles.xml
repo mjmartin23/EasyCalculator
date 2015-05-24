@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="android:style/Theme.Material">
+
+        <item name="android:windowBackground">@color/White</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverflowBtnStyle</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListViewStyle</item>
+        <item name="android:textColor">@color/grey20</item>
+
+    </style>
+
+    <style name="CalcFont" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textColor">@color/grey20</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="OverflowBtnStyle" parent="android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_action_overflow_button</item>
+    </style>
+
+    <style name="DropDownListViewStyle" parent="android:Widget.Material.ListView.DropDown">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:background">@color/White</item>
+    </style>
+
+    <style name="AppTheme.Blue">
+        <item name="android:colorPrimary">@color/blue500</item>
+        <item name="android:colorPrimaryDark">@color/blue700</item>
+    </style>
+
+    <style name="AppTheme.Green">
+        <item name="android:colorPrimary">@color/green500</item>
+        <item name="android:colorPrimaryDark">@color/green700</item>
+    </style>
+
+    <style name="AppTheme.Red">
+        <item name="android:colorPrimary">@color/red500</item>
+        <item name="android:colorPrimaryDark">@color/red700</item>
+    </style>
+
+    <style name="AppTheme.Purple">
+        <item name="android:colorPrimary">@color/purple500</item>
+        <item name="android:colorPrimaryDark">@color/purple700</item>
+    </style>
+
+    <style name="AppTheme.Indigo">
+        <item name="android:colorPrimary">@color/indigo500</item>
+        <item name="android:colorPrimaryDark">@color/indigo700</item>
+    </style>
+
+    <style name="AppTheme.Teal">
+        <item name="android:colorPrimary">@color/teal500</item>
+        <item name="android:colorPrimaryDark">@color/teal700</item>
+    </style>
+
+    <style name="AppTheme.Lime">
+        <item name="android:colorPrimary">@color/lime500</item>
+        <item name="android:colorPrimaryDark">@color/lime700</item>
+    </style>
+
+    <style name="AppTheme.Yellow">
+        <item name="android:colorPrimary">@color/yellow500</item>
+        <item name="android:colorPrimaryDark">@color/yellow700</item>
+    </style>
+
+    <style name="AppTheme.Orange">
+        <item name="android:colorPrimary">@color/orange500</item>
+        <item name="android:colorPrimaryDark">@color/orange700</item>
+    </style>
+
+    <style name="AppTheme.BlueGrey">
+        <item name="android:colorPrimary">@color/bluegrey500</item>
+        <item name="android:colorPrimaryDark">@color/bluegrey700</item>
+    </style>
+
+
+
+
+</resources>
