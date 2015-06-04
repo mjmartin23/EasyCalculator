@@ -2,14 +2,15 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_dialog"
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/White"
     tools:context=".CustomDialog"
     >
     
     <TextView
+        android:id="@+id/dialog_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -17,7 +18,16 @@
         android:text="@string/choose_theme"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:textColor="@color/grey20"
+        />
+
+    <TextView
+        android:id="@+id/dark_themes_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="16dp"
+        android:text="@string/dark_themes"
+        android:textSize="16sp"
         />
 
     <GridLayout
@@ -72,6 +82,44 @@
         <Button
             android:layout_width="@dimen/theme_choice_diam"
             android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_bluegrey"
+            android:clickable="true"
+            android:id="@+id/bluegrey_btn"
+            />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/light_themes_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="16dp"
+        android:text="@string/light_themes"
+        android:textSize="16sp"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="@integer/theme_cols"
+        android:rowCount="@integer/theme_rows"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
+            android:background="@drawable/circle_cyan"
+            android:clickable="true"
+            android:id="@+id/cyan_btn"
+            />
+
+
+        <Button
+            android:layout_width="@dimen/theme_choice_diam"
+            android:layout_height="@dimen/theme_choice_diam"
             android:background="@drawable/circle_green"
             android:clickable="true"
             android:id="@+id/green_btn"
@@ -104,13 +152,10 @@
         <Button
             android:layout_width="@dimen/theme_choice_diam"
             android:layout_height="@dimen/theme_choice_diam"
-            android:background="@drawable/circle_bluegrey"
+            android:background="@drawable/circle_amber"
             android:clickable="true"
-            android:id="@+id/bluegrey_btn"
+            android:id="@+id/amber_btn"
             />
-
-
-
 
     </GridLayout>
 

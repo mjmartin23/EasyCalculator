@@ -21,15 +21,15 @@ Created by Matt on 12/31/2014.
 
 public class CustomDialog extends Dialog {
 
-    public Activity c;
-    public Button blue,red,green,purple,orange,yellow,teal,lime,bluegrey,indigo;
+    public Class c;
+    public Button blue,red,green,purple,orange,yellow,teal,lime,bluegrey,indigo,cyan,amber;
     public int THEME;
     public String PREFS_NAME = "MyPrefsFile";
 
 
     public CustomDialog(Activity a) {
         super(a);
-        this.c = a;
+        c = a.getClass();
     }
 
     @Override
@@ -48,6 +48,8 @@ public class CustomDialog extends Dialog {
         lime = (Button)findViewById(R.id.lime_btn);
         bluegrey = (Button)findViewById(R.id.bluegrey_btn);
         indigo = (Button)findViewById(R.id.indigo_btn);
+        cyan = (Button)findViewById(R.id.cyan_btn);
+        amber = (Button)findViewById(R.id.amber_btn);
 
         blue.setOnClickListener(listener);
         red.setOnClickListener(listener);
@@ -59,6 +61,8 @@ public class CustomDialog extends Dialog {
         lime.setOnClickListener(listener);
         bluegrey.setOnClickListener(listener);
         indigo.setOnClickListener(listener);
+        cyan.setOnClickListener(listener);
+        amber.setOnClickListener(listener);
     }
 
 
@@ -83,21 +87,26 @@ public class CustomDialog extends Dialog {
                     THEME = R.style.AppTheme_Teal;
                     break;
                 case R.id.green_btn:
-                    THEME = R.style.AppTheme_Green;
+                    THEME = R.style.AppThemeLight_Green;
                     break;
                 case R.id.lime_btn:
-                    THEME = R.style.AppTheme_Lime;
+                    THEME = R.style.AppThemeLight_Lime;
                     break;
                 case R.id.orange_btn:
-                    THEME = R.style.AppTheme_Orange;
+                    THEME = R.style.AppThemeLight_Orange;
                     break;
                 case R.id.yellow_btn:
-                    THEME = R.style.AppTheme_Yellow;
+                    THEME = R.style.AppThemeLight_Yellow;
                     break;
                 case R.id.bluegrey_btn:
                     THEME = R.style.AppTheme_BlueGrey;
                     break;
-
+                case R.id.cyan_btn:
+                    THEME = R.style.AppThemeLight_Cyan;
+                    break;
+                case R.id.amber_btn:
+                    THEME = R.style.AppThemeLight_Amber;
+                    break;
             }
 
             //Put theme changes into shared preferences
@@ -111,7 +120,7 @@ public class CustomDialog extends Dialog {
 
             //Restart activity to apply changes
             Context context = getContext();
-            Intent i = new Intent(getContext(), MainActivity.class);
+            Intent i = new Intent(getContext(), c);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }

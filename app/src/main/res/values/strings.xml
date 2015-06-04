@@ -6,4 +6,15 @@
     <string name="action_feedback">Feedback</string>
     <string name="drawer_header_title">History</string>
     <string name="choose_theme">Pick a theme!</string>
+    <string name="light_themes">Light Themes</string>
+    <string name="dark_themes">Dark Themes</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_closed">Drawer Closed</string>
+
+    <string-array name="drawer_items">
+        <item>Calculator</item>
+        <item>Tip Calculator</item>
+        <item>Sale Calculator</item>
+    </string-array>
+
 </resources>

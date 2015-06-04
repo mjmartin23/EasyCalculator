@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 'android-MNC'
     buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.easyapps.easycalculator"
-        minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 'MNC'
+        targetSdkVersion 'MNC'
+        versionCode 6
+        versionName "2.0.0"
     }
     buildTypes {
         release {

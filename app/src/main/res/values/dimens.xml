@@ -6,6 +6,9 @@
     <dimen name="actionbar_height">60dp</dimen>
     <dimen name="buttonshadowdx">5dp</dimen>
     <dimen name="theme_choice_diam">50dp</dimen>
-    <integer name="theme_rows">4</integer>
-    <integer name="theme_cols">4</integer>
+    <dimen name="menu_btn_right_padding">16dp</dimen>
+
+    <integer name="theme_rows">2</integer>
+    <integer name="theme_cols">3</integer>
+
 </resources>

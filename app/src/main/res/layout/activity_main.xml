@@ -1,44 +1,63 @@
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawer_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin"
             android:paddingBottom="@dimen/activity_vertical_margin"
-            tools:context=".MainActivity"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:textColor="@color/grey30"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/lastOpEditText"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:gravity="bottom|end"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent">
+                </TextView>
+
                 <EditText
                     android:textColor="@color/grey20"
-                    android:textSize="22sp"
+                    android:textSize="26sp"
                     android:text=""
                     android:cursorVisible="true"
                     android:textCursorDrawable="@null"
                     android:id="@+id/editText"
-                    android:layout_gravity="top|center_horizontal"
+                    android:layout_gravity="bottom|center_horizontal"
                     android:background="@android:color/transparent"
                     android:gravity="center|end"
                     android:paddingRight="16dp"
                     android:paddingLeft="16dp"
-                    android:layout_height="match_parent"
-                    android:layout_width="fill_parent">
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_width="fill_parent"
+                    android:inputType="textNoSuggestions">
                 </EditText>
             </LinearLayout>
 
@@ -65,6 +84,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="&lt;"
                             />
                         <Button
@@ -73,6 +93,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text=">"
                             />
                         <Button
@@ -81,7 +102,8 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
-                            android:text="Delete"
+                            android:stateListAnimator="@anim/button_anim"
+                            android:text="delete"
                             />
                         <Button
                             style="@android:style/ButtonBar"
@@ -89,7 +111,8 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
-                            android:text="CLEAR"
+                            android:stateListAnimator="@anim/button_anim"
+                            android:text="clear"
                             />
 
                     </TableRow>
@@ -104,6 +127,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="sin" />
                         <Button
                             style="@android:style/ButtonBar"
@@ -111,6 +135,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="cos" />
                         <Button
                             style="@android:style/ButtonBar"
@@ -118,14 +143,17 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="tan" />
                         <Button
                             style="@android:style/ButtonBar"
-                            android:id="@+id/logbtn"
+                            android:id="@+id/ansbtn"
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
-                            android:text="log" />
+                            android:stateListAnimator="@anim/button_anim"
+                            android:text="ans" />
+
 
                     </TableRow>
 
@@ -139,6 +167,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="sqrt" />
                         <Button
                             style="@android:style/ButtonBar"
@@ -146,20 +175,24 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="^" />
                         <Button
                             style="@android:style/ButtonBar"
-                            android:id="@+id/inversebtn"
+                            android:id="@+id/logbtn"
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
-                            android:text="x^-1" />
+                            android:stateListAnimator="@anim/button_anim"
+                            android:text="log" />
+
                         <Button
                             style="@android:style/ButtonBar"
                             android:id="@+id/lnbtn"
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="ln" />
 
                     </TableRow>
@@ -173,6 +206,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="x^2"
                             />
                         <Button
@@ -181,6 +215,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="("
                             />
                         <Button
@@ -189,6 +224,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text=")"
                             />
                         <Button
@@ -197,6 +233,7 @@
                             android:background="@drawable/opbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="/"
                             />
 
@@ -211,6 +248,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="7"
                             />
                         <Button
@@ -219,6 +257,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="8"
                             />
                         <Button
@@ -227,6 +266,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="9"
                             />
                         <Button
@@ -235,6 +275,7 @@
                             android:background="@drawable/opbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="x"
                             />
 
@@ -249,6 +290,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="4"
                             />
                         <Button
@@ -257,6 +299,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="5"
                             />
                         <Button
@@ -265,6 +308,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="6"
                             />
                         <Button
@@ -273,6 +317,7 @@
                             android:background="@drawable/opbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="-"
                             />
 
@@ -287,6 +332,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="1"
                             />
                         <Button
@@ -295,6 +341,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="2"
                             />
                         <Button
@@ -303,6 +350,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="3"
                             />
                         <Button
@@ -311,6 +359,7 @@
                             android:background="@drawable/opbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="+"
                             />
 
@@ -325,6 +374,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="."
                             />
                         <Button
@@ -333,6 +383,7 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="0"
                             />
                         <Button
@@ -341,14 +392,16 @@
                             android:background="@drawable/numberbtns_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="(-)"
                             />
                         <Button
                             style="@android:style/ButtonBar"
                             android:id="@+id/equalsbtn"
-                            android:background="@color/blue700"
+                            android:background="@drawable/equalsbtn_blue"
                             android:layout_height="fill_parent"
                             android:textColor="@color/grey20"
+                            android:stateListAnimator="@anim/button_anim"
                             android:text="="
                             />
 
